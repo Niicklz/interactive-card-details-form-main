@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/reset-min.css">
+  <link rel="stylesheet" href="/style.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+
+  
+</head>
+<body>
+
+  <div class="container">
+    <div class="cards-container">
+      <div class="white-card">
+        <div class="secret-digit" >
+          <p class="three-digits" id="cvc-digits">000</p>
+        </div>
+      </div>
+      <div class="blue-card">
+       <div class="top-circles">
+        <div class="white-circle"></div>
+        <div class="transparent-circle"></div>
+       </div>
+       <div class="card-digits-info">
+        <p class="card-digits" id="card-digits">0000 0000 0000 0000</p>
+        <div class="info-user">
+          <p class="name" id="username">ROXI NUNEZ</p>
+          <p class="date"><span class="mm-card" id="mm-date">00</span>
+            <span>/</span>
+          <span class="yy-card" id="yy-date">00</span></p>
+        </div>
+       </div>
+      </div>
+    </div>
+    <div class="form-container" id="form-container">
+      <form action="" id="formulario">
+        <label for="card-holder">CARDHOLDER NAME</label>
+        <input type="text" id="card-holder" class="card-holder"  data-inputs="cardHolder" placeholder="e.g. Roxi Nunez">
+        <p class="warning" data-warning="cardHolderWarning">cant be empty</p>
+
+        <label for="card-number">CARD NUMBER</label>
+        <input type="number" id="card-number" class="card-number"  data-inputs="cardNumber" placeholder="e.g. 1234 5678 9123 0000">
+        <p class="warning" data-warning="cardNumberWarning">cant be empty</p>
+
+
+        
+        <div class="date-cvc">
+          <div class="date-cont">
+            <label for="mm">EXP.DATE</label>
+          <input type="number" class="mm" id="mm" data-inputs="mmDate" placeholder="MM" >
+          <p class="warning" data-warning="mmDateWarning">cant be empty</p>
+          </div>
+         
+          <div class="yy-cont">
+            <label for="yy">(MM/YY)</label>
+          <input type="number" class="yy" id="yy" data-inputs="yyDate" placeholder="YY" >
+          <p class="warning" data-warning="yyDateWarning">cant be empty</p>
+          </div>
+          
+          <div class="cvc-cont">
+            <label for="cvc">CVC</label>
+            <input type="number" class="cvc" id="cvc" data-inputs="cvc" placeholder="123" maxlength="3">
+            <p class="warning" data-warning="cvcWarning">cant be empty</p>
+          </div>
+          
+
+
+        </div>
+
+        <button class="confirm" id="confirm" type="submit">Confirm</button>
+      </form>
+
+
+    </div>
+    
+      <div class="img-cont inactive" id="thanks-cont">
+        <img src="/images/icon-complete.svg" alt="">
+        <h1 class="thanks">Thank You!</h1>
+        <p class="add">We've added your card details</p>
+        <button type="submit" class="continue" id="continue">Continue</button>
+      </div>
+    
+
+
+  </div>
+
+<!-- 
+
+
+ 
+
+ 
+
+  
+  Continue
+
+   Completed state start -->
+
+
+  <script src="/main.js"></script>
+</body>
+</html>

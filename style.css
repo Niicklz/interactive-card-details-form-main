@@ -1,0 +1,221 @@
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+
+
+.container {
+  width: 100%;
+}
+
+.cards-container {
+  width: 100%;
+  height: 270px;
+  background-color: hsl(278, 68%, 11%);
+  position: relative;
+}
+
+.white-card {
+  position: absolute;
+  right: 25px;
+  top: 60px;
+  background-image: url(/images/bg-card-back.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 170px;
+  
+  
+}
+.secret-digit {
+  position: absolute;
+  right: 30px;
+  top: 67px;
+  color: hsl(0, 0%, 100%);
+}
+
+
+
+.blue-card {
+  background-image: url(/images/bg-card-front.png);
+  width: 280px;
+  height: 170px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 145px;
+  left: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.top-circles {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.white-circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.transparent-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+ 
+}
+.card-digits-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.card-digits, .info-user {
+  color:hsl(0, 0%, 100%) ;
+}
+.card-digits {
+  font-size: 18px;
+  letter-spacing: 1px;
+
+  
+}
+
+.info-user {
+  display: flex;
+  justify-content: space-between;
+}
+
+form {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+
+label {
+  color: hsl(278, 68%, 11%);
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.card-holder, .card-number {
+  width: 100%;
+  height: 40px;
+  border: 1px solid hsl(279, 6%, 55%);
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 16px;
+  
+}
+.date-cvc {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.mm, .yy {
+  width: 80%;
+  height: 40px;
+  border-radius: 8px;
+  padding: 8px;
+  border: 1px solid hsl(279, 6%, 55%);
+}
+
+.cvc {
+  height: 40px;
+  border: 1px solid hsl(279, 6%, 55%);
+  padding: 8px;
+  border-radius: 8px;
+  
+}
+.warning  {
+  font-size: 12px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  visibility: hidden;
+  color: red;
+}
+
+input:focus {
+  
+  outline: 2px solid hsl(278, 94%, 30%);
+  
+ 
+  
+}
+
+input:invalid {
+  outline: 2px solid red;
+
+}
+
+input:invalid + .warning {
+  visibility: visible;
+}
+
+.confirm  {
+  height: 45px;
+  border: 0;
+  background-color: hsl(278, 68%, 11%);
+  border-radius: 8px;
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+
+
+.img-cont img {
+  width: 100px;
+  height: 100px;
+}
+
+.img-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  margin-top: 72px;
+
+}
+
+.thanks {
+  font-size: 32px;
+  color: hsl(278, 68%, 11%);
+}
+
+.add {
+  color: hsl(279, 6%, 55%);
+  font-size: 18px;
+}
+
+.continue {
+  width: 100%;
+  height: 50px;
+  background-color:hsl(278, 68%, 11%) ;
+  border-radius: 8px;
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.inactive {
+  display: none;
+}
+
+
+
